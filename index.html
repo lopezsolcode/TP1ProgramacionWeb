@@ -3,44 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página principal</title>
+    <title>Solutions Co.</title>
     <meta name="description" content="Esta página muestra una presentación básica de los servicios que pueden ofrecer Solutions Co..">
     <meta name="keywords" content="servicios, servicios web, web">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body class="d-flex flex-column min-vh-100">
     <!-- Este video está bueno para ver lo de flexbox
         https://www.youtube.com/watch?v=fYq5PXgSsbE&t=1s -->
 
     <header>
         <!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
-        <nav class="navbar navbar-expand-md bg-body-secondary">
-            <div class="container-fluid justify-content-center">
-                <div class="d-flex gap-3">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="../TP1ProgramacionWeb/assets/img/perritoCallcenter.jpg">
-                        Solutions Co.
-                    </a>
-                    <!-- Esto fijate que permite colapsar las opciones de nav cuando se hace chiquita la pantalla -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Proyectos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Sobre nosotros</a>
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark navbar-custom">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="assets/img/LogoFondoNegro.png" width="40" height="40" class="rounded-circle">
+                    <span class="fw-bold">Solutions Co.</span>
+                </a>
+
+                <!-- Botón mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto gap-3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Sobre nosotros</a>
+                        </li>
+                    </ul>
                 </div>
+
             </div>
         </nav>
     </header>
 
     <main class="flex-fill" >
+         <div class="container mt-5">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/img/fotoJulian.jpg" class="card-img-top">
+                            <h5 class="card-title text-center mt-3">
+                                Julián Carola
+                            </h5>
+                            <p class="card-text ">
+                                Especialista en front end y diseño. <br>
+                                Interesado en nuevas formas de ver la web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 offset-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/img/fotoSol.png" class="card-img-top">
+                            <h5 class="card-title text-center mt-3">
+                                Sol López
+                            </h5>
+                            <p class="card-text">
+                                Especialista en back end y base de datos. <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col d-flex justify-content-center">
+                        <button type="button" class="btn btn-success btn-lg">
+                            Contactarnos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <main class="flex-fill" >
          <div class="container mt-5">
             <div class="row">
                 <div class="col-3">
